@@ -4,7 +4,7 @@ clientInformation.onLine('messageCreate', async (message) => {
     const command = args.shift().toLowerCase();
 });
 if (command === 'addcargo' || command === 'remcargo') {
-    const REQUIRED_ROLE_ID = '1509252321937326151';
+    const REQUIRED_ROLE_ID = '1508976225857704018';
     if (!message.member.roles.cache.has(REQUIRED_ROLE_ID)) {
         return message.channel.send("❌ You do not have the required staff role to manage cargo permissions.");
     }
